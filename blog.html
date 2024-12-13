@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ</title>
+    <!-- Google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.19/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body style="font-family: Lexend, sans-serif" class="bg-[#FFF]">
+    <header>
+  <div class="bg-[#F9F7F3] p-6">
+    <div class="flex flex-col sm:flex-row items-center mx-4 sm:mx-28 justify-between">
+      <button class="bg-[#B4F461] text-black py-3 px-8 rounded-lg font-semibold mb-4 sm:mb-0">
+        <a href="index.html">Home</a>
+      </button>
+      
+      <div class="flex items-center space-x-2 mb-4 sm:mb-0">
+        <img src="./assets/logo.png" alt="" class="h-8 w-8" />
+        <p class="text-black font-semibold text-xl">Donate Bangladesh</p>
+      </div>
+      
+      <div class="flex items-center space-x-2">
+        <img src="./assets/coin.png" alt="" class="h-8 w-8" />
+        <p class="text-black"><span id="navbarAmount">5500</span> BDT</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+    <main>
+      <div class="mx-4 sm:mx-32">
+        <h1 class="text-3xl font-bold mt-10">Important FAQ:</h1>
+        <div class="collapse collapse-arrow bg-base-200 mt-5 mb-5">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            What is the Document Object Model (DOM)?
+          </div>
+          <div class="collapse-content">
+            <p>
+              The Document Object Model (DOM) is a structure that represents a
+              webpage as a tree of objects, allowing programming languages like
+              JavaScript to interact with and modify the content and layout of a
+              webpage.
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 mb-5">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            How do you select an element from the DOM?
+          </div>
+          <div class="collapse-content">
+            <p>
+              To select an element from the DOM, you can use methods like:
+            </p>
+            <ol>
+              <li>getElementById() - by ID</li>
+              <li>getElementsByClassName() - by class</li>
+              <li>getElementsByTagName() - by tag</li>
+              <li>querySelector() - by CSS selector</li>
+            </ol>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 mb-5">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            What is event delegation in the context of DOM, and why is it useful?
+          </div>
+          <div class="collapse-content">
+            <p>
+              Event delegation is a technique where you attach a single event
+              listener to a parent element, instead of multiple listeners to
+              individual child elements. It works by leveraging event bubbling,
+              making it more efficient and easier to manage events, especially
+              when elements are added or removed dynamically.
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 mb-5">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            How do you manipulate an event's attributes and styles using the DOM?
+          </div>
+          <div class="collapse-content">
+            <p>
+              To manipulate an event's attributes and styles using the DOM: <br />
+              <strong>Attributes:</strong> Use setAttribute() or directly modify
+              properties (e.g., element.id = "newId"). <br />
+              <strong>Styles:</strong> Use style.property (e.g.,
+              element.style.backgroundColor = "red") to change CSS properties.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
