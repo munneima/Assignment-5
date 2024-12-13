@@ -20,7 +20,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body style="font-family: Lexend, sans-serif" class="bg-[#FFF]">
-    <header class="sticky top-0 backdrop-blur-lg">
+    <header class="backdrop-blur-lg sm:sticky sm:top-0">
       <!-- Navbar -->
       <div class="bg-[#F9F7F3] p-6">
         <div class="flex flex-col sm:flex-row items-center mx-4 sm:mx-16 lg:mx-28 justify-between">
@@ -168,7 +168,7 @@
             BDT
           </button>
           <h4 class="mb-4 font-bold text-xl">
-            Donate for Flood at Noakhali, Bangladesh
+            Aid for Injured in the Quota Movement
           </h4>
           <p class="mb-6 text-gray-500">
             The recent Quota movement has resulted in numerous injuries and
@@ -272,7 +272,7 @@
             time: donationTime.toLocaleTimeString(),
           };
 
-          donationHistory.push(donationDetails);
+          donationHistory.unshift(donationDetails); // Insert at the top
 
           const historyDetails = document.getElementById("historyDetails");
           const historyItem = document.createElement("div");
@@ -281,7 +281,7 @@
             <p>${donationDetails.amount} Taka is donated for ${donationDetails.name}</p>
             <p>Date: ${donationDetails.date}, Time: ${donationDetails.time}</p>
           `;
-          historyDetails.appendChild(historyItem);
+          historyDetails.prepend(historyItem); // Insert at the top
         };
       }
 
